@@ -11,10 +11,10 @@ p_load(
 
 moody_tpm <- import("transition-matrix-moody.xlsx")
 
-> mat <- as.matrix(moodys_tpm)
+mat <- as.matrix(moody_tpm)
 
 # Define states
-> states <- c("WR", "C","Ca","Caa3","Caa2","Caa1", "B3","B2","B1", "Ba3", "Ba2","Ba1","Baa3","Baa2","Baa1","A3","A2","A1","Aa3", "Aa2","Aa1","Aaa")
+states <- c("WR", "C","Ca","Caa3","Caa2","Caa1", "B3","B2","B1", "Ba3", "Ba2","Ba1","Baa","Baa3","Baa2","Baa1","A3","A2","A1","Aa3", "Aa2","Aa1","Aa","Aaa")
 
 # Convert data frame to matrix and assign row/column names
 transition_matrix <- as.matrix(mat)
@@ -26,8 +26,11 @@ if (all(states %in% transition_matrix[1, ])) {
   transition_matrix <- transition_matrix[-1, ]
 }
 
+#Transforming the matrix into probability matrix
+tm <- transition_matrix/rowSums(transition_matrix)
+
 # Create the Markov chain object
-mc <- new("markovchain", states = states, transitionMatrix = transition_matrix)  
+mc <- new("markovchain", states = states, transitionMatrix = tm)  
 
 # Analyze Markov chain properties
 # used to find the communicating states
