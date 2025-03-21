@@ -1,6 +1,6 @@
-Towards Fairness and Accuracy: A Comparative Study of Sovereign Credit Ratings by Global Agencies
+# Towards Fairness and Accuracy: A Comparative Study of Sovereign Credit Ratings by Global Agencies
 
-Abstract
+## Abstract
 
 This project examines the factors which influence sovereign credit ratings assigned by three prominent global credit rating agencies: Moody's, Fitch, and Standard & Poor (S&P). We delve into the determinants of these ratings and their implications for countries, with a particular focus on the countries in the global south.
 
@@ -10,23 +10,16 @@ This project report investigates the transition probabilities of sovereign credi
 
 Through empirical analysis and statistical modelling, this research sheds light on the factors driving sovereign credit rating transitions and the persistence of sticky ratings. Such insights offer valuable implications for investors, policymakers, and financial institutions in managing credit risk exposure, designing investment strategies, and formulating sovereign debt policies.
 
+## Repository Structure
 
-Repository Structure
+- **`regression.R`**: Contains the regression analysis code used to explore the factors influencing sovereign credit ratings.
+- **`markov-chain.R`**: Implements the Markov chain analysis to study the dynamics of sovereign credit rating transitions.
+- **`transition-matrix.R`**: Includes the code for constructing the Transition Probability Matrix (TPM), which quantifies the likelihood of ratings transitions.
 
-regression.R: Contains the regression analysis code used to explore the factors influencing sovereign credit ratings.
+## Data Files
 
-markov-chain.R: Implements the Markov chain analysis to study the dynamics of sovereign credit rating transitions.
-
-transition-matrix.R: Includes the code for constructing the Transition Probability Matrix (TPM), which quantifies the likelihood of ratings transitions.
-
-Data Files
-
-/data_sca/global_south.xlsx: Contains the list of countries classified as part of the global south. This data is used to analyze potential biases in sovereign credit ratings.
-
-/data_sca/g20.xlsx: Lists the countries that are members of the G20, also used in the bias analysis within the regression models.
-
-/data_sca/credit-rating-transitions.xlsx: Provides historical credit rating data for various countries, used in constructing the Transition Probability Matrix (TPM).
-
-/data_sca/transition-matrix-moodys.xlsx: Contains the calculated transition matrix specific to Moody's sovereign credit ratings.
-
-/data_sca/data.xlsx: The master dataset that includes all factors used in the regression analysis, such as macroeconomic indicators and socio-political factors.
+- **`/data/global_south.xlsx`**: Contains the list of countries classified as part of the global south. This data is used to analyze potential biases in sovereign credit ratings.
+- **`/data/g20.xlsx`**: Lists the countries that are members of the G20, also used in the bias analysis within the regression models.
+- **`/data/credit-rating-transitions.xlsx`**: Provides historical credit rating data for various countries, used in constructing the Transition Probability Matrix (TPM).
+- **`/data/transition-matrix-moodys.xlsx`**: Contains the calculated transition matrix specific to Moody's sovereign credit ratings.
+- **`/data/data.xlsx`**: The master dataset that includes all factors used in the regression analysis, such as macroeconomic indicators and socio-political factors.
