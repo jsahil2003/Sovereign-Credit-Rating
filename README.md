@@ -22,7 +22,11 @@ transition-matrix.R: Includes the code for constructing the Transition Probabili
 Data Files
 
 /data_sca/global_south.xlsx: Contains the list of countries classified as part of the global south. This data is used to analyze potential biases in sovereign credit ratings.
+
 /data_sca/g20.xlsx: Lists the countries that are members of the G20, also used in the bias analysis within the regression models.
+
 /data_sca/credit-rating-transitions.xlsx: Provides historical credit rating data for various countries, used in constructing the Transition Probability Matrix (TPM).
+
 /data_sca/transition-matrix-moodys.xlsx: Contains the calculated transition matrix specific to Moody's sovereign credit ratings.
+
 /data_sca/data.xlsx: The master dataset that includes all factors used in the regression analysis, such as macroeconomic indicators and socio-political factors.
