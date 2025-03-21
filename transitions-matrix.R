@@ -23,3 +23,6 @@ for (i in nrow(data):2) {
   }
 }
 
+#Transforming the matrix into probability matrix
+tm <- transition_matrix/rowSums(transition_matrix)
+#View(tm)
