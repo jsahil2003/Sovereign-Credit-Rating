@@ -1,5 +1,5 @@
-Towards Fairness and Accuracy: A Comparative Study of Sovereign Credit Ratings by Global Agencies
-Abstract
+#Towards Fairness and Accuracy: A Comparative Study of Sovereign Credit Ratings by Global Agencies
+#Abstract
 This project examines the factors which influence sovereign credit ratings assigned by three prominent global credit rating agencies: Moody's, Fitch, and Standard & Poor (S&P). We delve into the determinants of these ratings and their implications for countries, with a particular focus on the countries in the global south.
 
 Our findings reveal a concerning negative bias toward countries categorised under the global south, indicating potential disparities in the rating assessment process. Additionally, we find that macroeconomic indicators such as Foreign Direct Investment (FDI) and external debt fail to demonstrate statistical significance in explaining variations in sovereign ratings. Furthermore, socio-political factors including the Human Development Index and government efficiency score exhibit similar insignificance in our analysis.
