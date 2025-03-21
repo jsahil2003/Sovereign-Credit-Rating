@@ -4,7 +4,7 @@ library(pacman)
 p_load(rio, janitor, dplyr, markovchain, ggplot2,)
 
 # Load the data
-data <- import("credit-transitions.xlsx") %>%
+data <- import("credit-rating-transitions.xlsx") %>%
   clean_names() %>%
   mutate(ratings_numeric = ratings_numeric + 1)
 
