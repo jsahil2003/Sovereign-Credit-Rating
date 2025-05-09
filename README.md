@@ -15,6 +15,7 @@ Through empirical analysis and statistical modelling, this research sheds light 
 - **`regression.R`**: Contains the regression analysis code used to explore the factors influencing sovereign credit ratings.
 - **`markov-chain.R`**: Implements the Markov chain analysis to study the dynamics of sovereign credit rating transitions.
 - **`transition-matrix.R`**: Includes the code for constructing the Transition Probability Matrix (TPM), which quantifies the likelihood of ratings transitions.
+- **`scr_regression.ipynb`**:  Contains the regression analysis code used to explore the factors influencing sovereign credit ratings using python and trying different transformations on variables.
 
 ## Data Files
 
